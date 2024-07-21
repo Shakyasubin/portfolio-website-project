@@ -6,6 +6,8 @@
   --dark-bg: var(--color-dark);
   --dark-text-color: white;
   --shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.464);
+  --border-color: var(--color-dark);
+  --dark-border-color: white;
 }
 html {
   /* scroll-behavior: smooth; */
@@ -30,7 +32,7 @@ body {
   gap: 1rem;
 }
 
-.flexcenter {
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,6 +119,7 @@ header .header {
 #darkMode:checked + .wrapper {
   --body-bg: var(--dark-bg);
   color: var(--dark-text-color);
+  --border-color: var(--dark-border-color);
 }
 #darkMode {
   display: none;
@@ -174,6 +177,41 @@ header .header {
 }
 
 /* <!-- Banner Section --> */
+.banner {
+  margin-top: 7rem;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  border-radius: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.info-divider {
+  background: grey;
+  width: 2px;
+  height: 70px;
+}
+
+.info-content .icon-container {
+  background: var(--color-orange);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: white;
+}
+
+.info-content div span {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+}
+
+.info-content div p {
+  color: var(--color-orange);
+}
 /* <!-- Skills Section --> */
 /* <!-- Projects Section --> */
 /* <!-- About Me Section --> */
