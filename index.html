@@ -20,8 +20,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Dark Mode Toggler -->
+    <input type="checkbox" id="darkMode" />
     <div class="wrapper">
-      <!-- Dark Mode Toggler -->
+      <label for="darkMode">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </label>
+
       <!-- Nav bar -->
       <header>
         <div class="header container flex">
@@ -40,7 +45,26 @@
           </div>
         </div>
       </header>
+
       <!-- Hero Section -->
+      <section class="hero-section container">
+        <div class="grid hero">
+          <div class="left flex">
+            <div>Hi I'm <span>Subin Ratna Shakya</span></div>
+            <div class="tag">Soft. Engineer</div>
+            <p>I love coding and teach others what I know</p>
+            <div>
+              <a href="./assets/photo.png" download
+                ><button>
+                  Download CV <i class="fa-solid fa-download"></i></button
+              ></a>
+            </div>
+          </div>
+          <div class="right flex">
+            <img src="./assets/photo.png" alt="subin speaker" />
+          </div>
+        </div>
+      </section>
       <!-- Banner Section -->
       <!-- Skills Section -->
       <!-- Projects Section -->
