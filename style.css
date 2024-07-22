@@ -53,6 +53,15 @@ a {
   font-style: normal;
 }
 
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title span {
+  border-bottom: 3px solid var(--color-orange);
+}
+
 .wrapper {
   background: var(--body-bg);
   min-height: 100vh;
@@ -213,7 +222,85 @@ header .header {
   color: var(--color-orange);
 }
 /* <!-- Skills Section --> */
+.skills {
+  margin-top: 5rem;
+}
+
+.skills-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container > div i {
+  font-size: 3rem;
+}
+
 /* <!-- Projects Section --> */
+.projects {
+  margin-top: 5rem;
+}
+
+.projects .projects-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects .project-card {
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  padding-bottom: 3rem;
+}
+
+.projects .project-card .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
 /* <!-- About Me Section --> */
+.about {
+  background: rgb(209, 233, 162);
+  padding: 7rem;
+}
+
+.about .myImg {
+  width: 40%;
+}
+
+.my-bio h2 {
+  letter-spacing: 5px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about .my-bio p:nth-child(4),
+.tag {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.my-bio .tag + div > span {
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+}
+
+.my-bio .tag + div > span:hover {
+  transform: scale(1.3);
+  background: grey;
+  cursor: pointer;
+  transition: all 0.5s;
+}
 /* <!-- Contact Section --> */
 /* <!-- Footer Section --> */
+footer {
+  min-height: 30vh;
+  background: #000;
+  color: white;
+  margin-top: 5rem;
+}
