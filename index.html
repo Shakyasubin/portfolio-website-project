@@ -34,20 +34,22 @@
             <div>Subin</div>
             <div class="line">Soft. Engineer</div>
           </div>
+          <label for="hamburgerMenu"><i class="fa-solid fa-bars"></i></label>
+          <input type="checkbox" id="hamburgerMenu" />
           <div class="menu">
             <ul class="flex navigation">
-              <li><a href="">Home</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
       </header>
 
       <!-- Hero Section -->
-      <section class="hero-section container">
+      <section class="hero-section container" id="hero">
         <div class="grid hero">
           <div class="left flex">
             <div>Hi I'm <span>Subin Ratna Shakya</span></div>
@@ -100,7 +102,7 @@
       </section>
 
       <!-- Skills Section -->
-      <div class="skills">
+      <div class="skills" id="skills">
         <h2 class="title"><span>Skills</span></h2>
         <div class="container flex skills-container">
           <div>
@@ -127,7 +129,7 @@
       </div>
 
       <!-- Projects Section -->
-      <section class="projects container">
+      <section class="projects container" id="projects">
         <h2 class="title"><span>Projects</span></h2>
         <div class="grid projects-container">
           <div class="project-card">
@@ -186,7 +188,7 @@
       </section>
 
       <!-- About Me Section -->
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="title"><span>About Me</span></h2>
         <div class="container flex about-content">
           <div class="flex-center myImg">
@@ -219,8 +221,56 @@
       </section>
 
       <!-- Contact Section -->
+      <section class="contact container" id="contact">
+        <h2 class="title"><span> Contact </span></h2>
+        <div class="flex social">
+          <a href=""><i class="fa-brands fa-linkedin"></i></a
+          ><a href=""><i class="fa-brands fa-github"></i></a
+          ><a href=""><i class="fa-brands fa-youtube"></i></a
+          ><a href=""><i class="fa-solid fa-mobile"></i></a>
+        </div>
+        <h3>OR</h3>
+        <div class="flex-center">
+          <a href="" class="email-section flex-center">
+            <span>youremail@gmail.com</span>
+            <div class="email-icon flex-center">
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+
       <!-- Footer Section -->
-      <footer>Coming Soon...</footer>
+      <footer class="flex-center">
+        <div class="top flex">
+          <div class="links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="socials">
+            <h3>Social Links</h3>
+            <ul>
+              <li><a href="">LinkedIN</a></li>
+              <li><a href="">Github</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+          &copy Copyright all rights reserved 2024 || Made by me
+        </div>
+      </footer>
+      <a href="#hero">
+        >
+        <div class="goUp flex-center">
+          <i class="fa-solid fa-chevron-up"></i></div
+      ></a>
     </div>
   </body>
 </html>
